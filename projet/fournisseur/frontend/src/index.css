@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f3f4f6;
+  -webkit-text-stroke: 0;
+}
+
+/* ── Allègement global des graisses ── */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600 !important;   /* semibold au lieu de bold/extrabold */
+}
+
+.font-black {
+  font-weight: 700 !important;   /* bold au lieu de 900 */
+}
+
+.font-extrabold {
+  font-weight: 600 !important;   /* semibold au lieu de 800 */
+}
+
+.font-bold {
+  font-weight: 500 !important;   /* medium au lieu de 700 */
+}
+
+.font-semibold {
+  font-weight: 500 !important;   /* medium au lieu de 600 */
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Leaflet custom styles */
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+/* Loading spinner */
+.spinner {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #f97316;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
