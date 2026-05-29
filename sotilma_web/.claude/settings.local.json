@@ -1,7 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "PowerShell(taskkill /PID 22736 /F)"
-    ]
-  }
-}
